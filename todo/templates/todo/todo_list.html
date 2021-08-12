@@ -17,6 +17,11 @@
         <td>{{ item.name }}</td>
         {% endif %}
     </tr>
+    <td>
+        <a href="/edit/{{ item.id }}">
+            <button>Edit</button>
+        </a>
+    </td>
     {% empty %}
     <tr><td>You're up to date</td></tr>
     {% endfor %}
